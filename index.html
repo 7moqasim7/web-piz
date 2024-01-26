@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza di Mama Bestelling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form  id+="mo" action="process_order.php" method="post">
+        <label for="naam">Naam:</label>
+        <input type="text" id="naam" name="naam" required>
+
+        <label for="adres">Adres:</label>
+        <input type="text" id="adres" name="adres" required>
+
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" required>
+
+        <label for="plaats">Plaats:</label>
+        <input type="text" id="plaats" name="plaats" required>
+
+        <label for="besteldatum">Besteldatum:</label>
+        <input type="date" id="besteldatum" name="besteldatum" required>
+
+        <label for="bezorgmethode">Bezorgen of afhalen:</label>
+        <select id="bezorgmethode" name="bezorgmethode" required>
+            <option value="bezorgen">Bezorgen</option>
+            <option value="afhalen">Afhalen</option>
+        </select>
+
+        <label for="pizza">Kies uw pizza:</label>
+        <select id="pizza" name="pizza[]" multiple required>
+            <option value="Margherita">Pizza Margherita - €12,50</option>
+            <option value="Funghi">Pizza Funghi - €12,50</option>
+            <option value="Marina">Pizza Marina - €13,95</option>
+            <option value="Hawai">Pizza Hawai - €11,50</option>
+            <option value="QuattroFormaggi">Pizza Quattro Formaggi - €14,50</option>
+          </select>
+            
+      
+        
+
+        <button type="submit">Bestel</button>
+    </form>
+</body>
+</html>
